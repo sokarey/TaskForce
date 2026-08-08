@@ -151,7 +151,7 @@ The following paths are currently hardcoded and should be customized for your en
 **In `TaskForce.ps1`:**
 - Line 182: `C:\TaskForce\New Batch` - Script paths
 - Line 194: `C:\TaskForce\Fresh Service` - Script paths
-- Line 226: `\\192.168.15.6\it\1Apps\Common Apps` - Network share path
+- Line 226: `\\192.168.1.1\it\1Apps\Common Apps` - Network share path
 
 **Domain Configuration:**
 - Line 409: `centrogs` - Default domain name
@@ -161,7 +161,7 @@ The following paths are currently hardcoded and should be customized for your en
 ⚠️ **Important Security Notes:**
 
 1. **Privilege Requirements**: This application requires administrator privileges and domain admin rights for many operations
-2. **Network Paths**: Update hardcoded network paths (`\\192.168.15.6\`) to match your environment
+2. **Network Paths**: Update hardcoded network paths (`\\192.168.1.1\`) to match your environment
 3. **Input Validation**: User input is passed to PowerShell commands - ensure proper validation in production
 4. **Credential Handling**: Credentials are handled via Windows credential manager but review for your security requirements
 5. **Audit Trail**: Currently no logging mechanism - consider adding audit logging for compliance
