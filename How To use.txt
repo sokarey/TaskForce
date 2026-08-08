@@ -1,0 +1,203 @@
+TaskForce:
+
+1. System Information
+Purpose: Retrieve detailed system information from any computer on the network.
+
+How to Use:
+
+Enter computer name in the input field
+Click "Get Info" button
+View information including:
+Hardware specs
+Operating system details
+Installed updates
+System status
+Tips:
+
+Use exact computer name for best results
+Clear output between queries
+Information is retrieved in real-time
+2. User Information Lookup
+Purpose: Search and display user account details.
+
+How to Use:
+
+Enter one of the following:
+Username
+Employee ID
+Office number
+Click "Search" button
+View detailed user information including:
+Account status
+Group memberships
+Last login
+Account expiration
+Tips:
+
+Partial matches are supported
+Case-insensitive search
+Use "Clear History" to reset results
+3. Group Policy Management
+Purpose: View and verify group policy settings on computers.
+
+How to Use:
+
+Enter computer name
+Click "Show Policies" button
+View applied policies including:
+Security settings
+Software restrictions
+Windows settings
+Administrative templates
+Tips:
+
+Wait for complete policy refresh
+Check timestamps of last update
+Use clear button to start fresh query
+4. Bulk User Management
+Purpose: Handle multiple user operations efficiently.
+
+New Batch Processing:
+Process new user creations
+Import from CSV/Excel
+Set default parameters
+Tips:
+
+Verify data before bulk operations
+Use templates for imports
+Check output for operation status
+5. Application Installation
+Purpose: Remote software installation management.
+
+How to Use:
+
+Enter PC name
+Select installation path:
+Use dropdown for saved paths
+Click "Edit" to manage paths
+Click "List Apps" to see available software
+Select apps to install
+Path Management:
+
+Add new paths
+Remove unused paths
+Verify path accessibility
+Tips:
+
+Check disk space before installation
+Verify network connectivity
+Monitor installation progress
+6. Application Uninstallation
+Purpose: Remove software from remote computers.
+
+How to Use:
+
+Enter PC name
+Click "List Apps" to see installed software
+Select apps to uninstall
+Monitor uninstallation progress
+Features:
+
+Filter app list
+Bulk uninstallation
+Success/failure reporting
+Tips:
+
+Verify app selection before uninstalling
+Check for dependencies
+Allow time for complete removal
+7. Password Management
+Purpose: Handle user password operations.
+
+Features:
+
+Change Password:
+Enter username/Hits ID
+Set new password
+Apply password policies
+Account Options:
+Unlock user account
+Force password change at next login
+Reset password history
+Tips:
+
+Use strong passwords
+Verify user identity
+Check account status after changes
+8. Restart Computers
+Purpose: Manage computer restarts remotely.
+
+How to Use:
+
+Enter computer name(s):
+Single computer: Enter name
+Multiple computers: Use commas
+Wildcards: Use * (e.g., PC*)
+Click "List Computers" to verify
+Select restart options
+Features:
+
+Scheduled restarts
+Force restart
+Restart confirmation
+Tips:
+
+Warn users before restart
+Check for active sessions
+Verify restart completion
+9. PC Rename
+Purpose: Change computer names in the domain.
+
+How to Use:
+
+Enter current PC name
+Enter new PC name
+Select domain from dropdown
+Provide admin credentials
+Click "Rename PC"
+Domain Management:
+
+Click "Edit" to manage domains
+Add/remove domains
+Set default domain
+Tips:
+
+Follow naming conventions
+Verify DNS updates
+Allow time for replication
+10. Network Tools
+Purpose: Network diagnostics and management.
+
+Tools Available:
+
+Ping:
+Test connectivity
+Measure response time
+Verify DNS resolution
+Traceroute:
+Track network path
+Identify bottlenecks
+Debug routing issues
+GPUpdate:
+Force policy refresh
+Update security settings
+Apply new policies
+Netstat:
+View network connections
+Monitor ports
+Check network status
+Flush DNS:
+Clear DNS cache
+Reset name resolution
+Fix DNS issues
+How to Use Each Tool:
+
+Enter PC name (if remote operation)
+Enter destination (for ping/traceroute)
+Select desired operation
+View results in output area
+Tips:
+
+Check network connectivity first
+Use appropriate timeouts
+Monitor operation progress

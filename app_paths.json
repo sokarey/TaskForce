@@ -1,0 +1,14 @@
+{
+    "paths": [
+        {
+            "name": "Common Apps",
+            "path": "\\\\YOUR_SERVER\\YOUR_SHARE\\Apps",
+            "description": "Update with your network share path"
+        },
+        {
+            "name": "Eset",
+            "path": "\\\\YOUR_SERVER\\YOUR_SHARE\\Apps\\ESET",
+            "description": "Update with your ESET installation path"
+        }
+    ]
+}

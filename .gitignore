@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# TaskForce specific
+*.exe
+*.spec
+build/
+dist/
+TaskForce Users.rar
+NewTaskForce.rar
+
+# Sensitive configuration (if you want to keep local configs separate)
+# domains.json
+# app_paths.json
+
+# Temporary files
+*.tmp
+*.log

@@ -1,0 +1,105 @@
+# TaskForce Compilation Instructions
+
+## Prerequisites
+1. Install Python 3.8 or higher
+2. Install required dependencies:
+   ```bash
+   pip install customtkinter
+   pip install pyinstaller
+   ```
+
+## Compilation Steps
+
+### Step 1: Navigate to the TaskForce directory
+```bash
+cd "c:\New folder (2)"
+```
+
+### Step 2: Compile the main application
+```bash
+pyinstaller --onefile --windowed --icon=TF.ico --name="TaskForce UI" TaskForce.py
+```
+
+### Step 3: Compile the CLI version (optional)
+```bash
+pyinstaller --onefile --console --icon=TF.ico --name="TaskFroce" TaskForce.ps1
+```
+
+## PyInstaller Options Explained
+
+- `--onefile`: Creates a single executable file
+- `--windowed`: Runs without console window (for GUI)
+- `--console`: Shows console window (for CLI tools)
+- `--icon=TF.ico`: Sets the application icon
+- `--name="TaskForce UI"`: Sets the output executable name
+
+## Additional Options
+
+### Include all configuration files in the executable:
+```bash
+pyinstaller --onefile --windowed --icon=TF.ico --add-data "domains.json;." --add-data "app_paths.json;." --name="TaskForce UI" TaskForce.py
+```
+
+### Include subdirectories (New Batch, Fresh Service, Excel):
+```bash
+pyinstaller --onefile --windowed --icon=TF.ico --add-data "domains.json;." --add-data "app_paths.json;." --add-data "New Batch;New Batch" --add-data "Fresh Service;Fresh Service" --add-data "Excel;Excel" --name="TaskForce UI" TaskForce.py
+```
+
+### Complete compilation with all files included:
+```bash
+pyinstaller --onefile --windowed --icon=TF.ico --add-data "domains.json;." --add-data "app_paths.json;." --add-data "New Batch;New Batch" --add-data "Fresh Service;Fresh Service" --add-data "Excel;Excel" --name="TaskForce UI" TaskForce.py
+```
+
+### For development/debugging version:
+```bash
+pyinstaller --onefile --console --icon=TF.ico --name="TaskForce UI Debug" TaskForce.py
+```
+
+## Post-Compilation
+
+After compilation, the executable will be in the `dist` folder:
+- `c:\New folder (2)\dist\TaskForce UI.exe`
+
+Move the executable to your desired location and ensure the configuration files (domains.json, app_paths.json) are in the same directory.
+
+## Troubleshooting
+
+### If customtkinter is not found:
+Make sure to install it before compiling:
+```bash
+pip install customtkinter
+```
+
+### If icon file is missing:
+Remove the `--icon=TF.ico` option from the command.
+
+### If configuration files are not found:
+Use the `--add-data` option to include them, or ensure they are placed in the same directory as the executable after compilation.
+
+## Clean Build
+To remove previous build files:
+```bash
+rmdir /s /q build
+rmdir /s /q dist
+del /q *.spec
+```
+
+## Icon Issues
+If the icon doesn't display correctly after compilation:
+
+1. **Recompile with updated spec file:**
+   ```bash
+   pyinstaller TaskForce UI.spec
+   ```
+
+2. **Clear Windows icon cache:**
+   ```bash
+   # Delete icon cache database
+   del %localappdata%\IconCache.db /a
+   # Restart Windows Explorer
+   taskkill /f /im explorer.exe && start explorer.exe
+   ```
+
+3. **Unpin and repin the application** from taskbar to refresh the icon
+
+4. **Verify icon file exists** in the same directory as the executable
